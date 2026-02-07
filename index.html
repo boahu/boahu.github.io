@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ParkRelay — street parking relay</title>
+  <meta name="description" content="ParkRelay matches drivers leaving a street parking spot with drivers looking for one — fast, fair, and local." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>ParkRelay</div>
+      </div>
+      <div class="navlinks">
+        <a class="pill" href="#how">How it works</a>
+        <a class="pill" href="#pilot">Pilot</a>
+        <a class="pill" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="kicker">Street Parking Relay</div>
+      <h1>Turn “leaving a spot” into a live hand-off.</h1>
+      <div class="sub">
+        ParkRelay helps people share real-time street parking availability:
+        drivers who are leaving can alert nearby drivers who are hunting — simple, fast, and community-powered.
+      </div>
+
+      <div class="ctas">
+        <a class="btn primary" href="#pilot">Join the pilot</a>
+        <a class="btn" href="#how">See how it works</a>
+      </div>
+
+      <div class="badges">
+        <span class="badge">Local-first</span>
+        <span class="badge">Fast handoff</span>
+        <span class="badge">Karma / points</span>
+        <span class="badge">Privacy-friendly</span>
+      </div>
+    </div>
+
+    <div class="section-title" id="how">How it works</div>
+    <div class="grid">
+      <div class="card third">
+        <h3>1) Leaver</h3>
+        <p>When you’re about to leave a parking spot, you tap “I’m leaving” and share your approximate location.</p>
+      </div>
+      <div class="card third">
+        <h3>2) Hunter</h3>
+        <p>Nearby drivers searching for parking see a “leaver” ping and can accept the handoff.</p>
+      </div>
+      <div class="card third">
+        <h3>3) Relay</h3>
+        <p>Simple guidance + timing helps the hunter arrive as the spot frees up. Everyone wins.</p>
+      </div>
+    </div>
+
+    <div class="section-title" id="pilot">Pilot in your city</div>
+    <div class="grid">
+      <div class="card half">
+        <h3>We’re starting small</h3>
+        <p>
+          The pilot is designed for one city at a time to reach critical mass.
+          If enough people join, ParkRelay becomes useful immediately.
+        </p>
+      </div>
+      <div class="card half">
+        <h3>What we need</h3>
+        <p>
+          A small group of “founding drivers” who will use it for a few days and invite friends.
+          We’ll iterate fast based on feedback.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-title" id="contact">Contact</div>
+    <div class="grid">
+      <div class="card">
+        <h3>Get in touch</h3>
+        <p>
+          Email: <a href="mailto:parkrelay.app@gmail.com">parkrelay.app@gmail.com</a><br/>
+          (Change this email to your real one.)
+        </p>
+      </div>
+    </div>
+
+    <!-- IMPORTANT for TikTok review later:
+         Privacy + Terms links must be visible on the homepage (not inside a menu). -->
+    <div class="footer">
+      <div>© <span id="y"></span> ParkRelay</div>
+      <div class="smalllinks">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
