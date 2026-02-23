@@ -21,42 +21,112 @@
 
     <div class="doc">
       <h1>Privacy Policy</h1>
-      <p><strong>Last updated:</strong> 2026-01-12</p>
+      <p><strong>Last updated:</strong> 2026-02-23</p>
 
       <p>
-        ParkRelay is a pilot concept for helping drivers coordinate street parking handoffs.
-        This Privacy Policy explains what information we collect and how we use it.
+        ParkRelay is a pilot app that helps drivers coordinate street parking handoffs.
+        This Privacy Policy explains what information we collect, how we use it, and your choices.
       </p>
 
-      <h2>Information we may collect</h2>
+      <h2>Important summary</h2>
       <ul>
-        <li><strong>Contact info</strong> (if you email us): your email address and message.</li>
-        <li><strong>Approximate location</strong> (only if/when you use the app): to match “leavers” with nearby “hunters”.</li>
-        <li><strong>Usage logs</strong>: basic diagnostics (timestamps, app version, error logs) to improve reliability.</li>
+        <li>We use <strong>precise location</strong> to run the pilot (geo-gating, matching, proximity/confirmation).</li>
+        <li>We use <strong>account data</strong> (email and authentication) so you can sign in and participate.</li>
+        <li>We may use <strong>push notifications</strong> for time-sensitive pilot events (assignment/cancellation/proximity alerts).</li>
+        <li>We do <strong>not</strong> sell your personal data.</li>
       </ul>
 
-      <h2>What we do NOT collect</h2>
+      <h2>Information we collect</h2>
+
+      <h3>1) Account & authentication</h3>
       <ul>
-        <li>We do not ask for your passwords.</li>
-        <li>We do not sell your personal data.</li>
+        <li><strong>Email address</strong> (when you sign up/sign in).</li>
+        <li><strong>Authentication data</strong> (e.g., session tokens) needed to keep you signed in.</li>
+      </ul>
+      <p>
+        If you use email/password sign-in, your password is handled by our authentication provider (Supabase Auth).
+        We do not store passwords in plaintext.
+      </p>
+
+      <h3>2) Location data (sensitive)</h3>
+      <ul>
+        <li><strong>Precise location</strong> (GPS latitude/longitude) while you use pilot features (e.g., Hunting, Leaving, navigation/proximity screens).</li>
+        <li><strong>Location accuracy</strong> information may be processed to improve reliability and reduce misuse (for example, ignoring very inaccurate fixes).</li>
+      </ul>
+      <p>
+        We use location to:
+        (a) verify you are inside the selected pilot city boundary before starting core actions,
+        (b) match leavers with nearby hunters,
+        (c) compute routing/ETA,
+        and (d) support proximity confirmation/alerts during an active handoff.
+      </p>
+
+      <h3>3) Notifications</h3>
+      <ul>
+        <li><strong>Push notification token</strong> (a device/app identifier) to deliver notifications.</li>
+        <li>Notification events related to pilot activity (e.g., assignment, cancellation, proximity alerts).</li>
       </ul>
 
-      <h2>How we use data</h2>
+      <h3>4) Usage & diagnostics</h3>
       <ul>
-        <li>To provide the service (matching nearby drivers).</li>
-        <li>To prevent abuse and improve performance.</li>
-        <li>To communicate with you if you contact us.</li>
+        <li><strong>Diagnostics</strong> such as timestamps, app version, and error logs to improve reliability and troubleshoot issues.</li>
       </ul>
+
+      <h2>How we use your data</h2>
+      <ul>
+        <li><strong>Provide the service:</strong> eligibility, geo-gating, matching, handoff flow, routing/ETA.</li>
+        <li><strong>Safety & integrity:</strong> reduce abuse and improve reliability during active pilot sessions.</li>
+        <li><strong>Notifications:</strong> send time-sensitive pilot messages if you enable notifications.</li>
+        <li><strong>Support:</strong> respond if you contact us.</li>
+      </ul>
+
+      <h2>Sharing & service providers</h2>
+      <p>
+        We share data only with service providers required to operate the app:
+      </p>
+      <ul>
+        <li><strong>Supabase</strong> (authentication, database, and server functions that power the pilot backend).</li>
+        <li><strong>OpenRouteService</strong> (routing/ETA). Routing requests are made to provide directions/ETA; the API key is stored server-side (not in the client app).</li>
+      </ul>
+      <p>
+        We do not sell your personal data.
+      </p>
 
       <h2>Data retention</h2>
       <p>
-        We keep data only as long as needed for the pilot and for troubleshooting.
-        You can request deletion at any time.
+        We keep data only as long as needed to operate the pilot, comply with legal obligations, and troubleshoot issues.
+        Retention can vary by data type (for example, active-session data vs. diagnostics).
+      </p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>You can decline permissions (location/notifications), but core pilot features may not work without them.</li>
+        <li>You can request deletion of your account and associated data (see “Contact”).</li>
+      </ul>
+
+      <h2>Security</h2>
+      <p>
+        We use reasonable safeguards to protect data, including encryption in transit where supported.
+        No method of transmission or storage is 100% secure.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        ParkRelay is not directed to children under 13, and we do not knowingly collect personal information from children under 13.
       </p>
 
       <h2>Contact</h2>
       <p>
-        Email: <a href="mailto:parkrelay.app@gmail.com">parkrelayteam@gmail.com</a>
+        Email: <a href="mailto:parkrelayteam@gmail.com">parkrelayteam@gmail.com</a>
+      </p>
+      <p>
+        For deletion requests, email us from the address used to sign in and include the subject:
+        <strong>“ParkRelay deletion request”</strong>.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If we change this Privacy Policy, we will update the “Last updated” date on this page.
       </p>
     </div>
 
