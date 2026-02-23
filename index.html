@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ParkRelay — street parking relay</title>
-  <meta name="description" content="ParkRelay matches drivers leaving a street parking spot with drivers looking for one — fast, fair, and local." />
+  <title>ParkRelay — NYC street parking pilot</title>
+  <meta name="description" content="ParkRelay is a New York City pilot that helps drivers coordinate real-time street parking handoffs. No selling, no reserving, no guarantees." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,29 +16,43 @@
       </div>
       <div class="navlinks">
         <a class="pill" href="#how">How it works</a>
-        <a class="pill" href="#pilot">Pilot</a>
+        <a class="pill" href="#nyc">NYC Pilot</a>
+        <a class="pill" href="#permissions">Permissions</a>
         <a class="pill" href="#contact">Contact</a>
       </div>
     </div>
 
     <div class="hero">
-      <div class="kicker">Street Parking Relay</div>
+      <div class="kicker">NYC Street Parking Pilot</div>
       <h1>Turn “leaving a spot” into a live hand-off.</h1>
       <div class="sub">
-        ParkRelay helps people share real-time street parking availability:
-        drivers who are leaving can alert nearby drivers who are hunting — simple, fast, and community-powered.
+        ParkRelay is a pilot in <strong>New York City</strong>.
+        Drivers who are leaving can signal nearby drivers who are hunting — fast, fair, and local.
       </div>
 
       <div class="ctas">
-        <a class="btn primary" href="#pilot">Join the pilot</a>
+        <a class="btn primary" href="#nyc">Join the NYC pilot</a>
         <a class="btn" href="#how">See how it works</a>
       </div>
 
       <div class="badges">
         <span class="badge">Local-first</span>
-        <span class="badge">Fast handoff</span>
-        <span class="badge">Karma / points</span>
+        <span class="badge">One winner per handoff</span>
+        <span class="badge">No selling / no reserving</span>
         <span class="badge">Privacy-friendly</span>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <h3 style="margin-top:0;">Important notice</h3>
+        <p style="margin-bottom:10px;">
+          ParkRelay helps coordinate <strong>real-time availability</strong>, but it does not guarantee a parking spot.
+          Street parking depends on traffic, timing, and local conditions.
+        </p>
+        <ul style="margin:0; padding-left:18px;">
+          <li><strong>No payments</strong>, no “spot selling”, no reservations.</li>
+          <li>Use at your own discretion and follow all traffic/parking rules.</li>
+          <li>We are <strong>not affiliated</strong> with the City of New York or any government agency.</li>
+        </ul>
       </div>
     </div>
 
@@ -46,48 +60,114 @@
     <div class="grid">
       <div class="card third">
         <h3>1) Leaver</h3>
-        <p>When you’re about to leave a parking spot, you tap “I’m leaving” and share your approximate location.</p>
+        <p>
+          When you’re about to leave a street parking spot, you tap <strong>Leaving</strong>.
+          The app uses your location to confirm you’re inside the NYC pilot boundary and to start the handoff timer.
+        </p>
       </div>
       <div class="card third">
         <h3>2) Hunter</h3>
-        <p>Nearby drivers searching for parking see a “leaver” ping and can accept the handoff.</p>
+        <p>
+          Nearby drivers who tap <strong>Hunting</strong> can be matched. The system selects <strong>one winner</strong>
+          (to avoid chaos). Only the winner receives the precise spot location.
+        </p>
       </div>
       <div class="card third">
         <h3>3) Relay</h3>
-        <p>Simple guidance + timing helps the hunter arrive as the spot frees up. Everyone wins.</p>
+        <p>
+          The winner gets guidance/ETA and time-window prompts. If the leaver cancels (e.g., returns home),
+          the hunter is notified so nobody wastes time.
+        </p>
       </div>
     </div>
 
-    <div class="section-title" id="pilot">Pilot in your city</div>
+    <div class="section-title" id="nyc">NYC Pilot</div>
     <div class="grid">
       <div class="card half">
-        <h3>We’re starting small</h3>
+        <h3>Pilot city: New York City</h3>
         <p>
-          The pilot is designed for one city at a time to reach critical mass.
-          If enough people join, ParkRelay becomes useful immediately.
+          We’re starting with NYC to reach critical mass. The app is geo-gated: core actions (Hunting/Leaving)
+          only work inside the NYC pilot area.
+        </p>
+        <p style="margin-bottom:0;">
+          Want the pilot in your neighborhood? Join and share with friends — density is everything.
         </p>
       </div>
       <div class="card half">
-        <h3>What we need</h3>
+        <h3>What we need from testers</h3>
+        <ul style="margin:0; padding-left:18px;">
+          <li>Use it during real parking attempts (a few times).</li>
+          <li>Report issues + confusing screens.</li>
+          <li>Invite 2–3 friends in NYC who also street-park.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-title" id="permissions">Permissions & Data Use (plain English)</div>
+    <div class="grid">
+      <div class="card half">
+        <h3>Location (required for the pilot)</h3>
         <p>
-          A small group of “founding drivers” who will use it for a few days and invite friends.
-          We’ll iterate fast based on feedback.
+          ParkRelay uses <strong>precise location</strong> to:
+        </p>
+        <ul style="margin:0; padding-left:18px;">
+          <li>confirm you’re inside the NYC pilot boundary before starting Hunting/Leaving,</li>
+          <li>match leavers with nearby hunters,</li>
+          <li>compute ETA/routing and proximity confirmation during an active handoff.</li>
+        </ul>
+        <p style="margin-top:10px; margin-bottom:0;">
+          If you deny location, the core pilot actions won’t work.
+        </p>
+      </div>
+      <div class="card half">
+        <h3>Notifications (recommended)</h3>
+        <p>
+          Notifications help with time-sensitive events:
+        </p>
+        <ul style="margin:0; padding-left:18px;">
+          <li>winner assignment,</li>
+          <li>cancellations,</li>
+          <li>proximity / timing prompts during an active handoff.</li>
+        </ul>
+        <p style="margin-top:10px; margin-bottom:0;">
+          You can use the app without notifications, but you may miss critical updates.
         </p>
       </div>
     </div>
 
-    <div class="section-title" id="contact">Contact</div>
+    <div class="section-title">Store links</div>
+    <div class="grid">
+      <div class="card half">
+        <h3>iOS (TestFlight)</h3>
+        <p>
+          iOS pilot access is provided via TestFlight during the beta.
+          If you’re already invited, open the invite link on your iPhone and install via the TestFlight app.
+        </p>
+      </div>
+      <div class="card half">
+        <h3>Android (Google Play testing)</h3>
+        <p>
+          Android pilot access is provided via Google Play testing tracks.
+          If you’re already invited, open the opt-in link and install from Google Play.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-title" id="contact">Contact & Support</div>
     <div class="grid">
       <div class="card">
         <h3>Get in touch</h3>
-        <p>
-          Email: <a href="mailto:parkrelay.app@gmail.com">parkrelayteam@gmail.com</a><br/>
+        <p style="margin-bottom:8px;">
+          Support email: <a href="mailto:parkrelayteam@gmail.com">parkrelayteam@gmail.com</a>
+        </p>
+        <p style="margin-top:0;">
+          For account/data deletion requests, email us from the address you used in the app and use the subject:
+          <strong>“ParkRelay deletion request”</strong>.
         </p>
       </div>
     </div>
 
-    <!-- IMPORTANT for TikTok review later:
-         Privacy + Terms links must be visible on the homepage (not inside a menu). -->
+    <!-- Required visibility: Privacy + Terms links should be easy to find (homepage footer). -->
     <div class="footer">
       <div>© <span id="y"></span> ParkRelay</div>
       <div class="smalllinks">
